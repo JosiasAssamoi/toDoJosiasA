@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ToDoJosiasAssamoi</string>
+    <string name="addTaskButtonDescription">Ajouter une tache</string>
+</resources>
