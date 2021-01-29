@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -8,9 +9,33 @@
 
     <TextView
         android:id="@+id/task_title"
-        android:background="@android:color/holo_blue_bright"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/littleMargin"
-        />
+        android:background="@android:color/holo_blue_bright"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/deleteTaskButton"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/littleMargin"
+            android:contentDescription="@string/deleteTaskButtonDesc"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <ImageButton
+            android:id="@+id/editTaskButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/littleMargin"
+            android:layout_weight="1"
+            android:contentDescription="@string/editTaskButtonDesc"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+    </LinearLayout>
+
 </LinearLayout>
