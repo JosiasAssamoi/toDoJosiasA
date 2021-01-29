@@ -7,4 +7,5 @@
     <string name="TitleAddTask">Ajouter une tâche</string>
     <string name="deleteTaskButtonDesc">button deleting</string>
     <string name="editTaskButtonDesc">editing button</string>
+    <string name="main_title">Bienvenue</string>
 </resources>
