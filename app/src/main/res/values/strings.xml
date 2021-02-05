@@ -3,9 +3,24 @@
     <string name="addTaskButtonDescription">Ajouter une tache</string>
     <string name="titleEditHint">title...</string>
     <string name="descriptionEditHint">description...</string>
+    <string name="prenomEditHint">prenom...</string>
+    <string name="nomEditHint">nom...</string>
+    <string name="emailEditHint">email...</string>
     <string name="ValiderButtonfromView">Valider</string>
+    <string name="ValiderUserButtonfromView">Modifier</string>
     <string name="TitleAddTask">Ajouter une tâche</string>
     <string name="deleteTaskButtonDesc">button deleting</string>
     <string name="editTaskButtonDesc">editing button</string>
     <string name="main_title">Bienvenue</string>
+    <string name="avatarFragmentDesc">avatar</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="chooseImage">Choisir une Image</string>
+    <string name="imageViewDesc">imageView</string>
+    <string name="choosePictureDesk">"choisir une photo "</string>
+    <string name="take_picture_text">Prendre une photo</string>
 </resources>

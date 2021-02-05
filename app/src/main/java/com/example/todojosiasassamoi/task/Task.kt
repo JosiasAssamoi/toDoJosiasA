@@ -1,4 +1,4 @@
-package com.example.todojosiasassamoi.tasklist
+package com.example.todojosiasassamoi.task
 
 import kotlinx.serialization.SerialName
 import java.io.Serializable

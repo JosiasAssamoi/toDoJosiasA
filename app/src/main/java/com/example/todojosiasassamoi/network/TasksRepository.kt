@@ -1,8 +1,6 @@
 package com.example.todojosiasassamoi.network
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import com.example.todojosiasassamoi.tasklist.Task
+import com.example.todojosiasassamoi.task.Task
 
 class TasksRepository {
     private val tasksWebService = Api.tasksWebService

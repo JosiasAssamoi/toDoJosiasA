@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.todojosiasassamoi.R
 import com.example.todojosiasassamoi.databinding.ActivityTaskBinding
-import com.example.todojosiasassamoi.tasklist.Task
 import java.util.*
 
 class TaskActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityTaskBinding
     companion object {
-        const val ADD_TASK_REQUEST_CODE = 777
         const  val EXTRA_REPLY = "task"
     }
 

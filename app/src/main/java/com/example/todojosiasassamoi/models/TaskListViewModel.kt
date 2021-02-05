@@ -5,31 +5,33 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.todojosiasassamoi.network.TasksRepository
-import com.example.todojosiasassamoi.tasklist.Task
+import com.example.todojosiasassamoi.task.Task
 import kotlinx.coroutines.launch
 
 class TaskListViewModel : ViewModel() {
     private val repository = TasksRepository()
     private val _taskList = MutableLiveData<List<Task>>()
-    public val taskList: LiveData<List<Task>> = _taskList
+    val taskList: LiveData<List<Task>> = _taskList
 
     fun loadTasks() {
 
         viewModelScope.launch {
             val fetchedTasks = repository.loadTasks()
-            if(fetchedTasks != null) _taskList.value = fetchedTasks!!
+            if(fetchedTasks != null) {
+                _taskList.value = fetchedTasks!!
+            }
         }
     }
     fun deleteTask(task: Task) {
         viewModelScope.launch {
-            val successfull = repository.removeTask(task)
+            repository.removeTask(task)
             loadTasks()
         }
 
     }
     fun addTask(task: Task) {
         viewModelScope.launch {
-            val successfull = repository.createTask(task)
+            repository.createTask(task)
             loadTasks()
         }
     }

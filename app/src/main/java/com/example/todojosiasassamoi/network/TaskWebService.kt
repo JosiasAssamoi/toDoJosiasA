@@ -1,5 +1,5 @@
 package com.example.todojosiasassamoi.network
-import com.example.todojosiasassamoi.tasklist.Task
+import com.example.todojosiasassamoi.task.Task
 import retrofit2.Response
 import retrofit2.http.*
 
