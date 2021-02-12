@@ -1,5 +1,7 @@
 package com.example.todojosiasassamoi.network
 
+import com.example.todojosiasassamoi.auth.LoginForm
+import com.example.todojosiasassamoi.auth.LoginResponse
 import com.example.todojosiasassamoi.userInfo.UserInfo
 import okhttp3.MultipartBody
 import retrofit2.Response
@@ -13,4 +15,6 @@ interface UserService {
     suspend fun updateAvatar(@Part avatar: MultipartBody.Part): Response<UserInfo>
     @PATCH("users")
     suspend fun update(@Body user: UserInfo): Response<UserInfo>
+    @POST("users/login")
+    suspend fun login(@Body user: LoginForm): Response<LoginResponse>
 }

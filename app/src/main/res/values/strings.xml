@@ -23,4 +23,14 @@
     <string name="imageViewDesc">imageView</string>
     <string name="choosePictureDesk">"choisir une photo "</string>
     <string name="take_picture_text">Prendre une photo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="LoginBtext">Login</string>
+    <string name="SignUpBText">SignUp</string>
+    <string name="emailHint">Email...</string>
+    <string name="EmailHint">email...</string>
+    <string name="passwdHint">password...</string>
+    <string name="firstname">firstname</string>
+    <string name="lastname">lastname</string>
+    <string name="confirmPass">confirm passwd...</string>
 </resources>
