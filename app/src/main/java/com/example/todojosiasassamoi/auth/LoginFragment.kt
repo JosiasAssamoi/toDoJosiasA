@@ -38,7 +38,6 @@ class LoginFragment : Fragment() {
             if (verificate(email, password)) {
                     val newIntent = Intent(activity, MainActivity::class.java)
                     startActivity(newIntent)
-
             } else {
                 Toast.makeText(context, "Nous avons besoin que vous remplissiez tous les champs 😫", Toast.LENGTH_LONG).show()
             }
